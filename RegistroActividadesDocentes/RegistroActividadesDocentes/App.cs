@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RegistroDocente.Controller;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,19 +13,17 @@ namespace RegistroActividadesDocentes
         public App()
         {
             // The root page of your application
-            MainPage = new ContentPage
+            using (DataAccess db = new DataAccess())
             {
-                Content = new StackLayout
+                if (db.GetUsuariosDefault())
                 {
-                    VerticalOptions = LayoutOptions.Center,
-                    Children = {
-                        new Label {
-                            HorizontalTextAlignment = TextAlignment.Center,
-                            Text = "Welcome to Xamarin Forms!"
-                        }
-                    }
+                    MainPage = new Views.MenuPage();
                 }
-            };
+                else
+                {
+                    MainPage = new NavigationPage(new Views.LoginPage());
+                }
+            }
         }
 
         protected override void OnStart()

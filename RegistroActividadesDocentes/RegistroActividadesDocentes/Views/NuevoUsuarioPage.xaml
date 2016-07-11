@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RegistroActividadesDocentes.Views.NuevoUsuarioPage"
+             Title="Registro de usuario">
+  <ContentPage.Padding>
+    <OnPlatform x:TypeArguments="Thickness">
+      <OnPlatform.iOS>
+        10,20,10,10
+      </OnPlatform.iOS>
+      <OnPlatform.Android>
+        10
+      </OnPlatform.Android>
+      <OnPlatform.WinPhone>
+        10
+      </OnPlatform.WinPhone>
+    </OnPlatform>
+  </ContentPage.Padding>
+  <ScrollView>
+    <StackLayout Spacing="10">
+      <Label FontSize="30"
+             HorizontalOptions="CenterAndExpand"
+             Text="Registro de usuario nuevo"/>
+      <Label HorizontalOptions="CenterAndExpand"
+             Text="Ingrese los datos correspondientes" />
+      <Entry x:Name="CedulaEntry"
+             Placeholder="Ingrese su cédula"
+             Keyboard="Text" />
+      <Entry x:Name="NombreEntry"
+             Placeholder="Ingrese su nombre"
+             Keyboard="Text" />
+      <Entry x:Name="Apellido1Entry"
+             Placeholder="Ingrese su primer apellido"
+             Keyboard="Text" />
+      <Entry x:Name="Apellido2Entry"
+             Placeholder="(Opcional) Ingrese su segundo apellido"
+             Keyboard="Text"/>
+      <Label Text="Ingrese su fecha de Nacimiento: " />
+      <DatePicker x:Name="NacimientoDatePicker"
+                  MaximumDate="01/01/2000"/>
+      <Entry x:Name="EmailEntry"
+             Placeholder="(Opcional) Ingrese su correo electrónico"
+             Keyboard="Email"/>
+      <Entry x:Name="CelularEntry"
+             Placeholder="(Opcional) Ingrese su número de móvil"
+             Keyboard="Telephone"/>
+      <Entry x:Name="TelefonoEntry"
+             Placeholder="(Opcional) Ingrese su número de teléfono"
+             Keyboard="Telephone"/>
+      <Label Text="Ingrese usuario y contraseña:"
+             FontAttributes="Bold"
+             FontSize="18"/>
+      <Entry x:Name="UsuarioEntry"
+             Placeholder="Ingrese su usuario" />
+      <Entry x:Name="PasswordEntry"
+             Placeholder="Ingrese su contraseña" />
+      <StackLayout Orientation="Horizontal">
+        <Button x:Name="GuardarButton"
+                HorizontalOptions="CenterAndExpand"
+                Text="Guardar" />
+        <Button x:Name="ResetButton"
+                HorizontalOptions="CenterAndExpand"
+                Text="Reiniciar" />
+      </StackLayout>
+    </StackLayout>
+  </ScrollView>
+</ContentPage>
