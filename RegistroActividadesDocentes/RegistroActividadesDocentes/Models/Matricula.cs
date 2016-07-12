@@ -18,6 +18,7 @@ namespace RegistroActividadesDocentes.Models
         public int Seccion { get; set; }
         [NotNull, ForeignKey(typeof(TipoMatricula))]
         public int TipoMatricula { get; set; }
+        public string EmailEncargado { get; set; }
         public int TipoSalida { get; set; }
         [NotNull]
         public DateTime modificado { get; set; }
