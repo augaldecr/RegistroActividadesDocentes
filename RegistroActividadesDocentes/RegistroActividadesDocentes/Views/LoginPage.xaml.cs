@@ -1,5 +1,5 @@
-﻿using RegistroDocente.Controller;
-using RegistroDocente.Models;
+﻿using RegistroActividadesDocentes.Controller;
+using RegistroActividadesDocentes.Models;
 
 using Xamarin.Forms;
 
@@ -50,7 +50,7 @@ namespace RegistroActividadesDocentes.Views
         {
             using (DataAccess db = new DataAccess())
             {
-                if (db.GetUsuarios() != null)
+                if (db.GetUsuarios().Count > 0)
                 {
                     NuevoButton.IsEnabled = false;
                     NuevoButton.IsVisible = false;

@@ -1,7 +1,8 @@
 ﻿using SQLite.Net.Attributes;
 
-namespace RegistroDocente.Models
+namespace RegistroActividadesDocentes.Models
 {
+    //Referente a los diferentes años calendario
     public class Anho
     {
         [PrimaryKey, AutoIncrement]

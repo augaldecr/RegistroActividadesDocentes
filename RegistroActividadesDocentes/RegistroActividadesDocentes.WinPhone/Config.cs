@@ -2,9 +2,9 @@
 using Windows.Storage;
 using Xamarin.Forms;
 
-[assembly: Dependency(typeof(RegistroDocente.WinPhone.Config))]
+[assembly: Dependency(typeof(RegistroActividadesDocentes.WinPhone.Config))]
 
-namespace RegistroDocente.WinPhone
+namespace RegistroActividadesDocentes.WinPhone
 {
     class Config : IConfig
     {

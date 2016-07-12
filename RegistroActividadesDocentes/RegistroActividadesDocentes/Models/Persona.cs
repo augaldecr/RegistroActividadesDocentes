@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using SQLite.Net.Attributes;
+﻿using SQLite.Net.Attributes;
+using SQLiteNetExtensions.Attributes;
+using System;
 
-namespace RegistroDocente.Models
-{
+namespace RegistroActividadesDocentes.Models
+{ 
+    //Referente a persona base de los diferentes individuos en el registro
     public class Persona
     {
         [PrimaryKey, AutoIncrement]
@@ -20,7 +18,8 @@ namespace RegistroDocente.Models
         public string Apellido2 { get; set; }
         [NotNull]
         public DateTime FechaNacimiento { get; set; }
-        [NotNull]
+        [NotNull, ForeignKey(typeof(Genero))]
+        public int Genero { get; set; }
         public string Email { get; set; }
         public string Celular { get; set; }
         public string Telefono { get; set; }

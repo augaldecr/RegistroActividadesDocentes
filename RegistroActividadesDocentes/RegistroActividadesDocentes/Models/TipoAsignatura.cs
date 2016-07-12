@@ -2,14 +2,13 @@
 
 namespace RegistroActividadesDocentes.Models
 {
-    //Referente al curso lectivo (2015, 2016, 2017, etc)
-    public class CursoLectivo
+    //Referente al tipo o modalidad de la asignatura 
+    // (Académica, Taller exploratorio, Subárea, Tecnología, etc.)
+    public class TipoAsignatura  
     {
         [PrimaryKey, AutoIncrement]
         public int ID { get; set; }
         [NotNull]
         public string Nombre { get; set; }
-        [NotNull, Default(value:false)]
-        public bool Activo { get; set; }
     }
 }

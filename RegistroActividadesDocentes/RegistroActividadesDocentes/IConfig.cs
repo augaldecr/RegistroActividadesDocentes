@@ -1,6 +1,6 @@
 ﻿using SQLite.Net.Interop;
 
-namespace RegistroDocente
+namespace RegistroActividadesDocentes
 {
     public interface IConfig
     {

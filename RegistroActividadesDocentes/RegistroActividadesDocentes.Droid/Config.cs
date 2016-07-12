@@ -1,9 +1,9 @@
 using SQLite.Net.Interop;
 using Xamarin.Forms;
 
-[assembly: Dependency(typeof(RegistroDocente.Droid.Config))]
+[assembly: Dependency(typeof(RegistroActividadesDocentes.Droid.Config))]
 
-namespace RegistroDocente.Droid
+namespace RegistroActividadesDocentes.Droid
 {
     public class Config : IConfig
     {

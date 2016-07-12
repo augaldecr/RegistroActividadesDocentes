@@ -3,9 +3,9 @@ using System.IO;
 using Windows.Storage;
 using Xamarin.Forms;
 
-[assembly: Dependency(typeof(RegistroDocente.UWP.Config))]
+[assembly: Dependency(typeof(RegistroActividadesDocentes.UWP.Config))]
 
-namespace RegistroDocente.UWP
+namespace RegistroActividadesDocentes.UWP
 {
     public class Config : IConfig
     {

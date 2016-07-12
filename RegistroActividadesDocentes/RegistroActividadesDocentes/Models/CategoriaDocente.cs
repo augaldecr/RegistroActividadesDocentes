@@ -2,12 +2,12 @@
 
 namespace RegistroActividadesDocentes.Models
 {
-    //Referente a Dirección Regional
-    public class Regional
+    //Referente a la categoría docente (MT2, MT3, VT5, ET3, etc)
+    public class CategoriaDocente
     {
         [PrimaryKey, AutoIncrement]
         public int ID { get; set; }
         [NotNull]
-        public string Nombre { get; set; }
+        public string Categoria { get; set; }
     }
 }

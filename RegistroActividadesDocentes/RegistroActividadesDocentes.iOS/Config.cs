@@ -2,9 +2,9 @@
 using System;
 using Xamarin.Forms;
 
-[assembly: Dependency(typeof(RegistroDocente.iOS.Config))]
+[assembly: Dependency(typeof(RegistroActividadesDocentes.iOS.Config))]
 
-namespace RegistroDocente.iOS
+namespace RegistroActividadesDocentes.iOS
 {
     public class Config : IConfig
     {

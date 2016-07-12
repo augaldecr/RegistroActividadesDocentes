@@ -1,15 +1,15 @@
 ﻿using SQLite.Net.Attributes;
+using SQLiteNetExtensions.Attributes;
 
 namespace RegistroActividadesDocentes.Models
 {
-    //Referente al curso lectivo (2015, 2016, 2017, etc)
-    public class CursoLectivo
+    public class Distrito
     {
         [PrimaryKey, AutoIncrement]
         public int ID { get; set; }
         [NotNull]
         public string Nombre { get; set; }
-        [NotNull, Default(value:false)]
-        public bool Activo { get; set; }
+        [NotNull, ForeignKey(typeof(Canton))]
+        public int Canton { get; set; }
     }
 }

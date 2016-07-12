@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using SQLite.Net.Attributes;
+﻿using SQLite.Net.Attributes;
 using SQLiteNetExtensions.Attributes;
 
-namespace RegistroDocente.Models
+namespace RegistroActividadesDocentes.Models
 {
+    //Clase referente a usuario de registro, normalmente un usuario único
     public class Usuario
     {
         [PrimaryKey, AutoIncrement]
@@ -16,6 +12,8 @@ namespace RegistroDocente.Models
         public string usuario { get; set; }
         [NotNull]
         public string password { get; set; }
+        [NotNull]
+        public string email { get; set; }
         [NotNull, ForeignKey(typeof(Persona))]
         public int persona { get; set; }
         [NotNull, Default(value: false)]

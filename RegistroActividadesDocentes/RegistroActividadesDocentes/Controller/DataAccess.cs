@@ -7,9 +7,9 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using System.Reflection;
-using RegistroDocente.Models;
+using RegistroActividadesDocentes.Models;
 
-namespace RegistroDocente.Controller
+namespace RegistroActividadesDocentes.Controller
 {
     public class DataAccess : IDisposable
     {
