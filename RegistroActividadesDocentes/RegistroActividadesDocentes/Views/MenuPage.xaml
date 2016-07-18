@@ -1,6 +1,33 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="RegistroActividadesDocentes.Views.MenuPage">
-  <Label Text="Tu puta madre" VerticalOptions="Center" HorizontalOptions="Center" />
-</ContentPage>
+  <TabbedPage.Children>
+    <ContentPage Title="Matrícula">
+      <ScrollView>
+        <StackLayout>
+          <Picker x:Name="MatriculaSeccionPicker"
+                  Title="Sección" />
+        </StackLayout>
+      </ScrollView>
+    </ContentPage>
+    <ContentPage Title="Asistencia">
+      <ScrollView>
+        
+      </ScrollView>
+    </ContentPage>
+    <ContentPage Title="Evaluaciones">
+      <ScrollView>
+        
+      </ScrollView>
+    </ContentPage>
+    <ContentPage Title="Configuración">
+      <ScrollView>
+        <StackLayout>
+          <Button x:Name="CyMButton"
+                  Text="Catálogos y Mantenimientos"/>
+        </StackLayout>
+      </ScrollView>
+    </ContentPage>
+  </TabbedPage.Children>
+</TabbedPage> 

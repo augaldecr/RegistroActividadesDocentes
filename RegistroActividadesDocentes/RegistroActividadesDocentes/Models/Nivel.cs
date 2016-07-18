@@ -12,5 +12,7 @@ namespace RegistroActividadesDocentes.Models
         public string Nombre { get; set; }
         [NotNull, ForeignKey(typeof(CicloEducativo))]
         public int CicloEducativo { get; set; }
+        [NotNull, Default(value:false)]
+        public bool activo { get; set; }
     }
 }

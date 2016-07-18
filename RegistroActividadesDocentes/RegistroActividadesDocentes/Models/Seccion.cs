@@ -9,9 +9,10 @@ namespace RegistroActividadesDocentes.Models
         public int ID { get; set; }
         [NotNull, ForeignKey(typeof(Nivel))]
         public int Nivel { get; set; }
-        [NotNull]
+        [NotNull, MaxLength(2)]
         public string Grupo { get; set; }
-        public char SubGrupo { get; set; }
+        [MaxLength(1)]
+        public string SubGrupo { get; set; }
         [ForeignKey(typeof(Funcionario))]
         public int ProfesorGuia { get; set; }
     }

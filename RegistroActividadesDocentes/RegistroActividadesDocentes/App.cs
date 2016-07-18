@@ -12,6 +12,7 @@ namespace RegistroActividadesDocentes
     {
         public App()
         {
+            
             // The root page of your application
             using (DataAccess db = new DataAccess())
             {

@@ -20,8 +20,7 @@ namespace RegistroActividadesDocentes.Controller
             var config = DependencyService.Get<IConfig>();
             connection = new SQLiteConnection(config.Plataforma,
                 Path.Combine(config.DirectorioDB, "RegistroDocente.db3"));
-            connection.CreateTable<Persona>();
-            connection.CreateTable<Usuario>();
+            CreaTablas(connection);
         }
 
         #region Persona
@@ -100,6 +99,52 @@ namespace RegistroActividadesDocentes.Controller
         public void Dispose()
         {
             connection.Dispose();
+        }
+
+        private void CreaTablas(SQLiteConnection con)
+        {
+            con.CreateTable<Persona>();
+            con.CreateTable<Usuario>();
+            con.CreateTable<AdecuacionCurricular>();
+            con.CreateTable<Anho>();
+            con.CreateTable<Asignatura>();
+            con.CreateTable<CalificacionXIndicadores>();
+            con.CreateTable<Canton>();
+            con.CreateTable<CategoriaDocente>();
+            con.CreateTable<CicloEducativo>();
+            con.CreateTable<Circuito>();
+            con.CreateTable<ComponentesPlanEval>();
+            con.CreateTable<CursoLectivo>();
+            con.CreateTable<Dia>();
+            con.CreateTable<Distrito>();
+            con.CreateTable<Evaluacion>();
+            con.CreateTable<FechasNoLectivas>();
+            con.CreateTable<Funcionario>();
+            con.CreateTable<Genero>();
+            con.CreateTable<HorarioDocente>();
+            con.CreateTable<InAsistencia>();
+            con.CreateTable<Indicador>();
+            con.CreateTable<IndicadorAplicado>();
+            con.CreateTable<Indicadores>();
+            con.CreateTable<Institucion>();
+            con.CreateTable<Matricula>();
+            con.CreateTable<ModalidadInstitucion>();
+            con.CreateTable<Nivel>();
+            con.CreateTable<NivelEscolar>();
+            con.CreateTable<Pais>();
+            con.CreateTable<PaseDeLista>();
+            con.CreateTable<Periodo>();
+            con.CreateTable<PlanEvaluativo>();
+            con.CreateTable<Provincia>();
+            con.CreateTable<Puesto>();
+            con.CreateTable<Regional>();
+            con.CreateTable<Seccion>();
+            con.CreateTable<TipoAsignatura>();
+            con.CreateTable<TipoEvaluacion>();
+            con.CreateTable<TipoInAsistencia>();
+            con.CreateTable<TipoMatricula>();
+            con.CreateTable<TipoPeriodicidadAsignatura>();
+            con.CreateTable<TipoPeriodo>();
         }
     }
 }
