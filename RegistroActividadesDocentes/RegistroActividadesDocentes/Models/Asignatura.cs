@@ -12,5 +12,7 @@ namespace RegistroActividadesDocentes.Models
         public string Nombre { get; set; }
         [NotNull, ForeignKey(typeof(TipoAsignatura))]
         public int TipoAsignatura { get; set; }
+        [ForeignKey(typeof(Especialidad))]
+        public int Especialidad { get; set; }
     }
 }

@@ -117,6 +117,7 @@ namespace RegistroActividadesDocentes.Controller
             con.CreateTable<CursoLectivo>();
             con.CreateTable<Dia>();
             con.CreateTable<Distrito>();
+            con.CreateTable<Especialidad>();
             con.CreateTable<Evaluacion>();
             con.CreateTable<FechasNoLectivas>();
             con.CreateTable<Funcionario>();

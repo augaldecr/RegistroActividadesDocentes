@@ -23,5 +23,13 @@ namespace RegistroActividadesDocentes.Models
         public string Email { get; set; }
         public string Celular { get; set; }
         public string Telefono { get; set; }
+
+        public string NombreCompleto
+        {
+            get
+            {
+                return string.Format("{0} {1} {2}",this.Apellido1, this.Apellido2, this.Nombre);
+            }
+        }
     }
 }

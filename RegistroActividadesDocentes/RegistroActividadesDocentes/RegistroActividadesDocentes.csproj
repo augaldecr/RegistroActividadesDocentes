@@ -37,20 +37,23 @@
   <ItemGroup>
     <Compile Include="App.cs" />
     <Compile Include="Controller\DataAccess.cs" />
-    <Compile Include="hola.cs" />
+    <Compile Include="Controller\DatosBasicos.cs" />
     <Compile Include="IConfig.cs" />
     <Compile Include="Models\AdecuacionCurricular.cs" />
     <Compile Include="Models\Anho.cs" />
     <Compile Include="Models\Asignatura.cs" />
+    <Compile Include="Models\AsignaturaEvaluada.cs" />
     <Compile Include="Models\CalificacionXIndicadores.cs" />
     <Compile Include="Models\Canton.cs" />
     <Compile Include="Models\CategoriaDocente.cs" />
     <Compile Include="Models\CicloEducativo.cs" />
     <Compile Include="Models\Circuito.cs" />
     <Compile Include="Models\ComponentesPlanEval.cs" />
+    <Compile Include="Models\Configuracion.cs" />
     <Compile Include="Models\CursoLectivo.cs" />
     <Compile Include="Models\Dia.cs" />
     <Compile Include="Models\Distrito.cs" />
+    <Compile Include="Models\Especialidad.cs" />
     <Compile Include="Models\Evaluacion.cs" />
     <Compile Include="Models\EvaluacionCualitativa.cs" />
     <Compile Include="Models\FechasNoLectivas.cs" />
@@ -74,6 +77,7 @@
     <Compile Include="Models\Provincia.cs" />
     <Compile Include="Models\Puesto.cs" />
     <Compile Include="Models\Regional.cs" />
+    <Compile Include="Models\RubricasEvaluacion.cs" />
     <Compile Include="Models\Seccion.cs" />
     <Compile Include="Models\TipoEvaluacion.cs" />
     <Compile Include="Models\TipoInAsistencia.cs" />

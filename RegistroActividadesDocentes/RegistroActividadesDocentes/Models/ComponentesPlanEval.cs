@@ -3,6 +3,8 @@ using SQLiteNetExtensions.Attributes;
 
 namespace RegistroActividadesDocentes.Models
 {
+    //Referente a cada componente del plan evaluativo por aplicar
+    // (Cotidiano, Extraclase, proyecto, prueba, etc)
     public class ComponentesPlanEval
     {
         [PrimaryKey, AutoIncrement]
